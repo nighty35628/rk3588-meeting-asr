@@ -278,8 +278,8 @@
       "sha256": "c0fdddab986a5167d9217e0da3d8b5aaf22f996e77e76a16ef1369c5fc0618a1"
     },
     "scripts/audit_release.py": {
-      "bytes": 6196,
-      "sha256": "6ac26e87a46b8354b2bc10b4a51bba24209d6cc994c0863f04b0812866508e29"
+      "bytes": 6420,
+      "sha256": "a1188a828cde72b3e05e86a60185078bb0469075728ff81607fc7ef011576371"
     },
     "scripts/export_public_inputs.py": {
       "bytes": 11224,

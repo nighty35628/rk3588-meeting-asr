@@ -2,11 +2,11 @@
   "status": "PASS",
   "candidate_files": 79,
   "git_history": {
-    "commits": 1,
-    "blobs": 13,
-    "tracked_files": 13
+    "commits": 2,
+    "blobs": 82,
+    "tracked_files": 79
   },
-  "candidate_bytes": 12313988,
+  "candidate_bytes": 12314212,
   "issues": [],
   "scope": "working-tree candidate and, with --history, all reachable Git blobs; heuristic scan, not legal clearance",
   "excluded": "ignored .venv, .local-build and reproduced directories; .git is never distributed by this inventory"

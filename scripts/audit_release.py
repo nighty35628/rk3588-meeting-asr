@@ -81,7 +81,9 @@ def main():
                 try:ipaddress.ip_address(value)
                 except ValueError:continue
                 issues.append(dict(file=name,reason='IPv4-like string in Git history'));break
-            if re.search(r'(?i)["\x27](?:reference|hypothesis|raw_text|normalized_reference)["\x27]\s*:',t):
+            # Field names in Python implementations describe runtime behavior, not
+            # released transcript payloads. Apply the payload-key test to data.
+            if Path(name).suffix.lower() in {'.json', '.jsonl', '.csv'} and re.search(r'(?i)["\x27](?:reference|hypothesis|raw_text|normalized_reference)["\x27]\s*:',t):
                 issues.append(dict(file=name,reason='possible transcript payload in Git history'))
     report=dict(status='PASS' if not issues else 'FAIL',candidate_files=len(candidates()),git_history=history,
                 candidate_bytes=sum((ROOT/n).stat().st_size for n in candidates() if (ROOT/n).is_file()),issues=issues,
