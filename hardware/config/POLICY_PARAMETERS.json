@@ -1,0 +1,59 @@
+{
+  "schema": "FIXED_FORMAL_ASR_POLICY_PARAMETERS_v1",
+  "created_unix": 1792112367.185845,
+  "candidate": {
+    "low": 0.9,
+    "high": 0.95,
+    "same_waveform_midband": "teacher",
+    "scope": "different input agreement does not imply statistical independence or individual safety"
+  },
+  "mixtures": {
+    "confidence_mix_low": [
+      {
+        "recipe": "normalized_shannon_entry",
+        "confidence_lt": 0.9753030446720764,
+        "weight": 0.863843176886491
+      },
+      {
+        "recipe": "mean_entry_maxposterior",
+        "confidence_lt": 0.962405133427767,
+        "weight": 0.004549891502801637
+      },
+      {
+        "recipe": "mean_entry_maxposterior",
+        "confidence_lt": 0.9722072538148704,
+        "weight": 0.13160693161070738
+      }
+    ],
+    "confidence_mix_matched": [
+      {
+        "recipe": "normalized_shannon_entry",
+        "confidence_lt": 0.9753030446720764,
+        "weight": 0.472259298588883
+      },
+      {
+        "recipe": "mean_entry_maxposterior",
+        "confidence_lt": 0.962405133427767,
+        "weight": 0.3897045689554038
+      },
+      {
+        "recipe": "mean_entry_maxposterior",
+        "confidence_lt": 0.9722072538148704,
+        "weight": 0.13803613245571325
+      }
+    ]
+  },
+  "assignment": {
+    "seed": 2026101619,
+    "algorithm": "Python random.Random(seed).random; one uniform per quality source in frozen manifest order, shared U for both mixture workpoints; persist before NN and reuse on cost repeats"
+  },
+  "rf": {
+    "model_file": "CHEAP_RF.json",
+    "model_sha256": "2f64155d9c9f9aaf4f37a710b551d456e4d4c48292e2aebafd30f390e37e7fc2",
+    "lambda_edits_per_s": 0.05,
+    "training_teacher_mean_s": 3.145955260156358,
+    "selection": "Finite six-capacity x seven-lambda old600 filename-room crossfit tuning; minimum component cost at revised development pooled/macro quality; not independent OOF test"
+  },
+  "empty_policy": "Successful no greedy entries escalates before numeric gating for dynamic arms; first_only keeps its output",
+  "new_source_ASR_seen": false
+}

@@ -1,0 +1,566 @@
+{
+  "status": "PASS",
+  "python": "3.14.7",
+  "text_rescored": false,
+  "hardware_run": false,
+  "integrity": {
+    "files": 74,
+    "self_consistency_only": true,
+    "external_signature": false
+  },
+  "points": {
+    "A": {
+      "rows": 10800,
+      "source_N": 600,
+      "recording_N": 18,
+      "policies": 9,
+      "methods": [
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch0_qwen",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1034,
+          "pooled_CER_pct": 7.390993566833452,
+          "macro_CER_pct": 6.917269231168038
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch0_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1197,
+          "pooled_CER_pct": 8.556111508220157,
+          "macro_CER_pct": 8.176447659777189
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch4_qwen",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 995,
+          "pooled_CER_pct": 7.112223016440314,
+          "macro_CER_pct": 7.300012188354971
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch4_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1159,
+          "pooled_CER_pct": 8.284488920657612,
+          "macro_CER_pct": 8.310717078128398
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "gcc_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1025,
+          "pooled_CER_pct": 7.326661901358113,
+          "macro_CER_pct": 7.018234566296906
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "mean_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1123,
+          "pooled_CER_pct": 8.027162258756254,
+          "macro_CER_pct": 7.656429277603558
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "mvdr_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 968,
+          "pooled_CER_pct": 6.9192280200142955,
+          "macro_CER_pct": 6.80364188408345
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "rms_qwen",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 785,
+          "pooled_CER_pct": 5.611150822015725,
+          "macro_CER_pct": 5.321421489403972
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "rms_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 927,
+          "pooled_CER_pct": 6.626161543959971,
+          "macro_CER_pct": 6.593860986660817
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch0_qwen",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1027,
+          "pooled_CER_pct": 7.3409578270193,
+          "macro_CER_pct": 6.8614745555742225
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch0_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1169,
+          "pooled_CER_pct": 8.355968548963546,
+          "macro_CER_pct": 7.971403940757006
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch4_qwen",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 985,
+          "pooled_CER_pct": 7.0407433881343815,
+          "macro_CER_pct": 7.220305508935237
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch4_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1129,
+          "pooled_CER_pct": 8.070050035739815,
+          "macro_CER_pct": 8.096122981599622
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "gcc_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 996,
+          "pooled_CER_pct": 7.119370979270908,
+          "macro_CER_pct": 6.808847176005765
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "mean_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1094,
+          "pooled_CER_pct": 7.819871336669049,
+          "macro_CER_pct": 7.447041887312417
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "mvdr_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 939,
+          "pooled_CER_pct": 6.711937097927091,
+          "macro_CER_pct": 6.5942544937923095
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "rms_qwen",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 778,
+          "pooled_CER_pct": 5.561115082201573,
+          "macro_CER_pct": 5.265626813810158
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "rms_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 897,
+          "pooled_CER_pct": 6.411722659042173,
+          "macro_CER_pct": 6.379266890132043
+        }
+      ],
+      "intervals": "A/F/C/EV historical intervals preserved in expected files where available; not recomputed",
+      "text_rescored": false
+    },
+    "EV": {
+      "rows": 2400,
+      "source_N": 600,
+      "recording_N": 18,
+      "policies": 2,
+      "methods": [
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ev_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 912,
+          "pooled_CER_pct": 6.5189421015010725,
+          "macro_CER_pct": 6.476620747254182
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "rms_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 927,
+          "pooled_CER_pct": 6.626161543959971,
+          "macro_CER_pct": 6.593860986660817
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ev_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 882,
+          "pooled_CER_pct": 6.3045032165832735,
+          "macro_CER_pct": 6.262026650725407
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "rms_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 897,
+          "pooled_CER_pct": 6.411722659042173,
+          "macro_CER_pct": 6.379266890132043
+        }
+      ],
+      "intervals": "A/F/C/EV historical intervals preserved in expected files where available; not recomputed",
+      "text_rescored": false
+    },
+    "F": {
+      "rows": 10800,
+      "source_N": 600,
+      "recording_N": 18,
+      "policies": 9,
+      "methods": [
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch0_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1197,
+          "pooled_CER_pct": 8.556111508220157,
+          "macro_CER_pct": 8.176447659777189
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch1_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1134,
+          "pooled_CER_pct": 8.10578984989278,
+          "macro_CER_pct": 7.843068219957946
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch2_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1225,
+          "pooled_CER_pct": 8.756254467476769,
+          "macro_CER_pct": 8.712692928606522
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch3_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1155,
+          "pooled_CER_pct": 8.255897069335239,
+          "macro_CER_pct": 8.206283000531736
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch4_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1159,
+          "pooled_CER_pct": 8.284488920657612,
+          "macro_CER_pct": 8.310717078128398
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch5_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1115,
+          "pooled_CER_pct": 7.969978556111508,
+          "macro_CER_pct": 7.891547574092066
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch6_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1076,
+          "pooled_CER_pct": 7.69120800571837,
+          "macro_CER_pct": 7.546647855177396
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "ch7_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1097,
+          "pooled_CER_pct": 7.841315225160829,
+          "macro_CER_pct": 7.426800747703723
+        },
+        {
+          "mode": "historical_case_preserved",
+          "policy": "rms_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 927,
+          "pooled_CER_pct": 6.626161543959971,
+          "macro_CER_pct": 6.593860986660817
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch0_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1169,
+          "pooled_CER_pct": 8.355968548963546,
+          "macro_CER_pct": 7.971403940757006
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch1_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1106,
+          "pooled_CER_pct": 7.905646890636168,
+          "macro_CER_pct": 7.638024500937764
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch2_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1198,
+          "pooled_CER_pct": 8.56325947105075,
+          "macro_CER_pct": 8.519246874199329
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch3_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1126,
+          "pooled_CER_pct": 8.048606147248034,
+          "macro_CER_pct": 7.996895610240595
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch4_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1129,
+          "pooled_CER_pct": 8.070050035739815,
+          "macro_CER_pct": 8.096122981599622
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch5_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1088,
+          "pooled_CER_pct": 7.7769835596854895,
+          "macro_CER_pct": 7.7008654813892115
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch6_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1046,
+          "pooled_CER_pct": 7.476769120800572,
+          "macro_CER_pct": 7.332053758648622
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch7_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 1069,
+          "pooled_CER_pct": 7.641172265904217,
+          "macro_CER_pct": 7.221757028683539
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "rms_sense",
+          "source_N": 600,
+          "recording_N": 18,
+          "reference_characters": 13990,
+          "errors": 897,
+          "pooled_CER_pct": 6.411722659042173,
+          "macro_CER_pct": 6.379266890132043
+        }
+      ],
+      "intervals": "A/F/C/EV historical intervals preserved in expected files where available; not recomputed",
+      "text_rescored": false
+    },
+    "C": {
+      "rows": 8000,
+      "source_N": 800,
+      "recording_N": 20,
+      "policies": 5,
+      "methods": [
+        {
+          "mode": "case_preserved_sensitivity",
+          "policy": "cal_energy_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2642,
+          "pooled_CER_pct": 12.954790624693537,
+          "macro_CER_pct": 13.16179119770016
+        },
+        {
+          "mode": "case_preserved_sensitivity",
+          "policy": "cal_label_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2625,
+          "pooled_CER_pct": 12.871432774345395,
+          "macro_CER_pct": 13.058903961082915
+        },
+        {
+          "mode": "case_preserved_sensitivity",
+          "policy": "ch0_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2652,
+          "pooled_CER_pct": 13.00382465431009,
+          "macro_CER_pct": 13.187086949444502
+        },
+        {
+          "mode": "case_preserved_sensitivity",
+          "policy": "ev_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2612,
+          "pooled_CER_pct": 12.807688535843875,
+          "macro_CER_pct": 13.007022867752028
+        },
+        {
+          "mode": "case_preserved_sensitivity",
+          "policy": "rms_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2601,
+          "pooled_CER_pct": 12.753751103265666,
+          "macro_CER_pct": 12.947711656888051
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "cal_energy_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2638,
+          "pooled_CER_pct": 12.935177012846916,
+          "macro_CER_pct": 13.142195846236849
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "cal_label_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2621,
+          "pooled_CER_pct": 12.851819162498774,
+          "macro_CER_pct": 13.039308609619605
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ch0_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2648,
+          "pooled_CER_pct": 12.98421104246347,
+          "macro_CER_pct": 13.167491597981194
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "ev_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2608,
+          "pooled_CER_pct": 12.788074923997254,
+          "macro_CER_pct": 12.987427516288715
+        },
+        {
+          "mode": "primary_casefold",
+          "policy": "rms_sense",
+          "source_N": 800,
+          "recording_N": 20,
+          "reference_characters": 20394,
+          "errors": 2597,
+          "pooled_CER_pct": 12.734137491419045,
+          "macro_CER_pct": 12.928116305424743
+        }
+      ],
+      "intervals": "A/F/C/EV historical intervals preserved in expected files where available; not recomputed",
+      "text_rescored": false
+    }
+  },
+  "bootstrap": {
+    "numpy": "2.5.2",
+    "seed": 2026101622,
+    "draws": 10000,
+    "S_quality_rows": 6000,
+    "S_cost_rows": 2400,
+    "matched_rows": 2400,
+    "matched_recordings": 30,
+    "matched_numeric_fields_compared": 1626,
+    "text_parity_reverified": false,
+    "physical_replay": false
+  },
+  "network_guard": "socket.socket and socket.create_connection denied during this full replay"
+}

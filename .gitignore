@@ -14,3 +14,17 @@ __pycache__/
 *.log
 private/
 raw_execution/
+.local-build/
+reproduced/
+*.onnx
+*.pt
+*.pth
+*.npy
+*.npz
+*.mp3
+*.m4a
+*.so
+*.dylib
+*.whl
+*.zip
+*.tar*

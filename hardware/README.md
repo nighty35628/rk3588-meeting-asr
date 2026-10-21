@@ -1,0 +1,11 @@
+# Historical device runner and frozen inference policy
+
+`historical/S/run_native.py` is the original response-bank / actual-cost stage runner. `historical/matched/run_native.py` is the completed four-block measurement implementation. Both preserve the original code/settings and pins, with local home-account roots replaced by /path/to placeholders. Original and redacted-copy hashes are recorded separately. They do not contain SSH credentials or board-maintenance automation. Their historical filenames/comments do not by themselves assert a new execution in this release.
+
+`policy/` includes the frozen causal policy, execution logic, confidence calculations and RF inference. `config/` retains exact policy parameters, preselected mixture assignments and the small frozen decision-tree ensemble JSON. That ensemble is a research policy artifact, not a neural checkpoint. `work/measurement_core/formal_policy_core.py` preserves the measured policy identity required by the unchanged matched analyzer.
+
+The policies decide first/probe/teacher from current outputs, confidence and waveform identity. They include blank-first escalation and skip a paid probe when it is the same waveform. The recorded Qwen settings were Chinese, empty context, 30-second chunk, memory_num=1, rollback_tokens=0, max_new_tokens=256 and ITN disabled. Runners preserve actual/native SDK call counting and separate service from excluded archive work. The published timing values are historical observations, not a new hardware test.
+
+**These snapshots are not a standalone executable board package.** They require excluded frozen adapter/teacher code, source/model files, qzxyz runtime, SDK libraries, source pins, environment-specific configuration and guard/idle-control components. Some configuration files required by historical pins are intentionally omitted. No guard bypass or guessed current board settings are supplied. Placeholder paths must be configured; they are not endpoints to access.
+
+Only parse/compile checks are run on historical hardware code here. Do not launch it to validate the offline tables. Rebuilding a complete guarded device environment and remeasuring the design is an additional task with unresolved dependencies. `reproducibility/reproduce.py --bootstrap` is the supported public numerical entry point.

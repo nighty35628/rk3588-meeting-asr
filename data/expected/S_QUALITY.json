@@ -1,0 +1,352 @@
+{
+  "schema": "FIXED_STRATA_PAIRED_RECORDING_STATISTICS_v1",
+  "cohort_id": "formal_quality_v1",
+  "analysis_scope": "quality",
+  "outcome_provenance": "bank_projection",
+  "design": {
+    "source_N": 600,
+    "recording_N": 30,
+    "analysis_rows_N": 6000,
+    "primary_quality_source_N": 600,
+    "primary_quality_recording_N": 30,
+    "bank_projection_rows_N": 6000,
+    "actual_policy_execution_rows_N": 0,
+    "reported_actual_call_counts_by_policy": null,
+    "actual_call_counts_physically_verified_here": false,
+    "bank_actual_calls_inferable_from_projection_rows": false,
+    "policies": [
+      "first_only",
+      "full_qwen",
+      "mean95",
+      "distinct_probe_confirmation",
+      "always_probe_disagree",
+      "legacy_conditional90to95",
+      "cheap_sameview_skip",
+      "confidence_mix_low",
+      "confidence_mix_matched",
+      "gain_rf_dev"
+    ],
+    "planned_repeats": {
+      "first_only": [
+        0
+      ],
+      "full_qwen": [
+        0
+      ],
+      "mean95": [
+        0
+      ],
+      "distinct_probe_confirmation": [
+        0
+      ],
+      "always_probe_disagree": [
+        0
+      ],
+      "legacy_conditional90to95": [
+        0
+      ],
+      "cheap_sameview_skip": [
+        0
+      ],
+      "confidence_mix_low": [
+        0
+      ],
+      "confidence_mix_matched": [
+        0
+      ],
+      "gain_rf_dev": [
+        0
+      ]
+    },
+    "quality_repeats": [
+      0
+    ],
+    "reference_characters": 13498,
+    "strata": [
+      {
+        "date_prefix": "20200623",
+        "filename_R": "R001",
+        "recording_N": 5,
+        "fixed_weight": 0.16666666666666666,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200624",
+        "filename_R": "R001",
+        "recording_N": 5,
+        "fixed_weight": 0.16666666666666666,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200630",
+        "filename_R": "R001",
+        "recording_N": 4,
+        "fixed_weight": 0.13333333333333333,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200701",
+        "filename_R": "R001",
+        "recording_N": 4,
+        "fixed_weight": 0.13333333333333333,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200702",
+        "filename_R": "R001",
+        "recording_N": 4,
+        "fixed_weight": 0.13333333333333333,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200805",
+        "filename_R": "R001",
+        "recording_N": 2,
+        "fixed_weight": 0.06666666666666667,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200806",
+        "filename_R": "R001",
+        "recording_N": 2,
+        "fixed_weight": 0.06666666666666667,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200807",
+        "filename_R": "R001",
+        "recording_N": 3,
+        "fixed_weight": 0.1,
+        "singleton": false
+      },
+      {
+        "date_prefix": "20200808",
+        "filename_R": "R001",
+        "recording_N": 1,
+        "fixed_weight": 0.03333333333333333,
+        "singleton": true
+      }
+    ],
+    "singleton_strata": 1,
+    "all_strata_singleton": false,
+    "physical_meeting_or_participant_independence_verified": false
+  },
+  "bootstrap": {
+    "seed": 2026101622,
+    "replicates": 10000,
+    "confidence": 0.95,
+    "unit": "complete paired recording within fixed date x filename-R strata",
+    "strata_weights": "frozen recording counts n_h / N",
+    "scope": "descriptive, conditional on observed strata and within-stratum recording exchangeability"
+  },
+  "methods": [
+    {
+      "policy": "first_only",
+      "macro_CER_pct": 11.288479441545018,
+      "pooled_CER_pct": 10.608979108016003
+    },
+    {
+      "policy": "full_qwen",
+      "macro_CER_pct": 10.426580390011415,
+      "pooled_CER_pct": 9.905171136464661
+    },
+    {
+      "policy": "mean95",
+      "macro_CER_pct": 10.450949588539178,
+      "pooled_CER_pct": 9.897762631500964
+    },
+    {
+      "policy": "distinct_probe_confirmation",
+      "macro_CER_pct": 10.461198737389271,
+      "pooled_CER_pct": 9.91257964142836
+    },
+    {
+      "policy": "always_probe_disagree",
+      "macro_CER_pct": 10.733766274074528,
+      "pooled_CER_pct": 10.149651800266707
+    },
+    {
+      "policy": "legacy_conditional90to95",
+      "macro_CER_pct": 10.506892836506427,
+      "pooled_CER_pct": 9.94962216624685
+    },
+    {
+      "policy": "cheap_sameview_skip",
+      "macro_CER_pct": 10.496643687656334,
+      "pooled_CER_pct": 9.934805156319454
+    },
+    {
+      "policy": "confidence_mix_low",
+      "macro_CER_pct": 10.492809463764845,
+      "pooled_CER_pct": 9.942213661283153
+    },
+    {
+      "policy": "confidence_mix_matched",
+      "macro_CER_pct": 10.361337542289998,
+      "pooled_CER_pct": 9.816269076900282
+    },
+    {
+      "policy": "gain_rf_dev",
+      "macro_CER_pct": 10.483120280348041,
+      "pooled_CER_pct": 9.94962216624685
+    }
+  ],
+  "contrasts": [
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "first_only",
+      "macro_CER_difference_pp": -0.8272807041557471,
+      "pooled_CER_difference_pp": -0.6963994665876427,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -1.299762722247394,
+          -0.3695309045591876
+        ],
+        "pooled_CER_difference_pp": [
+          -1.1173740519008883,
+          -0.29966067647090344
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "full_qwen",
+      "macro_CER_difference_pp": 0.034618347377856296,
+      "pooled_CER_difference_pp": 0.0074085049636991585,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.18694132322231263,
+          0.2523938429390344
+        ],
+        "pooled_CER_difference_pp": [
+          -0.1882976762526034,
+          0.20999146981656167
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "mean95",
+      "macro_CER_difference_pp": 0.010249148850093093,
+      "pooled_CER_difference_pp": 0.01481700992739654,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.07183984810421848,
+          0.09485977420744023
+        ],
+        "pooled_CER_difference_pp": [
+          -0.06021466581420478,
+          0.09457172077371989
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "always_probe_disagree",
+      "macro_CER_difference_pp": -0.2725675366852567,
+      "pooled_CER_difference_pp": -0.23707215883834643,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.5386831214600603,
+          0.004023348660777493
+        ],
+        "pooled_CER_difference_pp": [
+          -0.44461158600208417,
+          -0.03011821398991188
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "legacy_conditional90to95",
+      "macro_CER_difference_pp": -0.045694099117156384,
+      "pooled_CER_difference_pp": -0.03704252481849046,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.21806708958865212,
+          0.12064846614123897
+        ],
+        "pooled_CER_difference_pp": [
+          -0.1712201295317506,
+          0.09591512499158085
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "cheap_sameview_skip",
+      "macro_CER_difference_pp": -0.03544495026706329,
+      "pooled_CER_difference_pp": -0.022225514891093923,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.21241516136797203,
+          0.13975822874462143
+        ],
+        "pooled_CER_difference_pp": [
+          -0.1654271124317214,
+          0.11564517229862915
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "confidence_mix_low",
+      "macro_CER_difference_pp": -0.031610726375573606,
+      "pooled_CER_difference_pp": -0.02963401985479308,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.1701479543388537,
+          0.09792324826419438
+        ],
+        "pooled_CER_difference_pp": [
+          -0.14846762856923443,
+          0.08878281389741363
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "confidence_mix_matched",
+      "macro_CER_difference_pp": 0.09986119509927249,
+      "pooled_CER_difference_pp": 0.0963105645280784,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.05533049072994238,
+          0.25467863219428044
+        ],
+        "pooled_CER_difference_pp": [
+          -0.04360473039211441,
+          0.23178699474423245
+        ]
+      }
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "gain_rf_dev",
+      "macro_CER_difference_pp": -0.021921542958770246,
+      "pooled_CER_difference_pp": -0.03704252481849046,
+      "descriptive95": {
+        "macro_CER_difference_pp": [
+          -0.23073821733839286,
+          0.18644062436227635
+        ],
+        "pooled_CER_difference_pp": [
+          -0.22804239916978175,
+          0.16180311973229342
+        ]
+      }
+    }
+  ],
+  "boundaries": {
+    "group_sensitivity": "point estimates only; no date/R population bootstrap",
+    "cohorts_combined": false,
+    "repetitions_are_independent_quality_N": false,
+    "speakerlabels_are_participant_IDs": false,
+    "NN_calls_added": 0,
+    "noninferiority_margin": null,
+    "primary_claim": null,
+    "success_decision": null,
+    "singleton_warning": "singleton strata contribute no resampling variance; zero-width CIs do not establish safety or equivalence",
+    "upstream_audit": "bank attribution, actual execution, SRS cost-subset membership and per-source bank/route drift are caller-verified"
+  }
+}

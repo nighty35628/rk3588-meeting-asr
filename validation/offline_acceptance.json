@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "relocated -I -S standard-library point replay PASS",
+    "modified input rejected by integrity gate",
+    "missing S cell rejected",
+    "duplicate S cell rejected",
+    "six Qwen asset identities complete; payloads excluded",
+    "parameterized decoder --help works without SDK/site packages",
+    "original seven result files and summary script unchanged"
+  ],
+  "python_files_parsed": 21,
+  "scope": "offline acceptance; no board, inference, conversion or transcript rescoring"
+}

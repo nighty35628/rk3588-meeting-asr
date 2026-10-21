@@ -1,0 +1,825 @@
+{
+  "schema": "FIXED_RECORDING_STATISTICS_MANIFEST_v1",
+  "policies": [
+    "first_only",
+    "full_qwen",
+    "mean95",
+    "distinct_probe_confirmation",
+    "always_probe_disagree",
+    "legacy_conditional90to95",
+    "cheap_sameview_skip",
+    "confidence_mix_low",
+    "confidence_mix_matched",
+    "gain_rf_dev"
+  ],
+  "contrasts": [
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "first_only"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "full_qwen"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "mean95"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "always_probe_disagree"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "legacy_conditional90to95"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "cheap_sameview_skip"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "confidence_mix_low"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "confidence_mix_matched"
+    },
+    {
+      "candidate": "distinct_probe_confirmation",
+      "comparator": "gain_rf_dev"
+    }
+  ],
+  "bootstrap": {
+    "seed": 2026101622,
+    "replicates": 10000,
+    "unit": "paired complete recording within fixed date x filename-R strata",
+    "strata_weights": "frozen recording counts n_h / N",
+    "confidence": 0.95
+  },
+  "primary_claim": null,
+  "noninferiority_margin": null,
+  "eligibility_scope": "parent pre-output source/exposure decision; no eligibility or independence inference here",
+  "cohort_id": "formal_cost_v1",
+  "analysis_scope": "cost",
+  "outcome_provenance": "actual_policy_execution",
+  "repeats": [
+    1,
+    2
+  ],
+  "recordings": [
+    {
+      "recording_id": "20200623_S_R001S01C01",
+      "date_prefix": "20200623",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200623_S_R001S03C01",
+      "date_prefix": "20200623",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200623_S_R001S04C01",
+      "date_prefix": "20200623",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200623_S_R001S07C01",
+      "date_prefix": "20200623",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200623_S_R001S08C01",
+      "date_prefix": "20200623",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200624_S_R001S01C01",
+      "date_prefix": "20200624",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200624_S_R001S05C01",
+      "date_prefix": "20200624",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200624_S_R001S06C01",
+      "date_prefix": "20200624",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200624_S_R001S07C01",
+      "date_prefix": "20200624",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200624_S_R001S08C01",
+      "date_prefix": "20200624",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200630_S_R001S02C01",
+      "date_prefix": "20200630",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200630_S_R001S06C01",
+      "date_prefix": "20200630",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200630_S_R001S07C01",
+      "date_prefix": "20200630",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200630_S_R001S08C01",
+      "date_prefix": "20200630",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200701_S_R001S01C01",
+      "date_prefix": "20200701",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200701_S_R001S04C01",
+      "date_prefix": "20200701",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200701_S_R001S05C01",
+      "date_prefix": "20200701",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200701_S_R001S06C01",
+      "date_prefix": "20200701",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200702_S_R001S01C01",
+      "date_prefix": "20200702",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200702_S_R001S04C01",
+      "date_prefix": "20200702",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200702_S_R001S05C01",
+      "date_prefix": "20200702",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200702_S_R001S08C01",
+      "date_prefix": "20200702",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200805_S_R001S01C01",
+      "date_prefix": "20200805",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200805_S_R001S06C01",
+      "date_prefix": "20200805",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200806_S_R001S05C01",
+      "date_prefix": "20200806",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200806_S_R001S07C01",
+      "date_prefix": "20200806",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200807_S_R001S02C01",
+      "date_prefix": "20200807",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200807_S_R001S06C01",
+      "date_prefix": "20200807",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200807_S_R001S08C01",
+      "date_prefix": "20200807",
+      "filename_R": "R001"
+    },
+    {
+      "recording_id": "20200808_S_R001S02C01",
+      "date_prefix": "20200808",
+      "filename_R": "R001"
+    }
+  ],
+  "sources": [
+    {
+      "id": "20200623_S_R001S01C01_u00001",
+      "recording_id": "20200623_S_R001S01C01",
+      "n": 9
+    },
+    {
+      "id": "20200623_S_R001S01C01_u00147",
+      "recording_id": "20200623_S_R001S01C01",
+      "n": 17
+    },
+    {
+      "id": "20200623_S_R001S01C01_u00644",
+      "recording_id": "20200623_S_R001S01C01",
+      "n": 49
+    },
+    {
+      "id": "20200623_S_R001S01C01_u00332",
+      "recording_id": "20200623_S_R001S01C01",
+      "n": 39
+    },
+    {
+      "id": "20200623_S_R001S03C01_u01118",
+      "recording_id": "20200623_S_R001S03C01",
+      "n": 26
+    },
+    {
+      "id": "20200623_S_R001S03C01_u00241",
+      "recording_id": "20200623_S_R001S03C01",
+      "n": 31
+    },
+    {
+      "id": "20200623_S_R001S03C01_u00993",
+      "recording_id": "20200623_S_R001S03C01",
+      "n": 7
+    },
+    {
+      "id": "20200623_S_R001S03C01_u01370",
+      "recording_id": "20200623_S_R001S03C01",
+      "n": 21
+    },
+    {
+      "id": "20200623_S_R001S04C01_u01099",
+      "recording_id": "20200623_S_R001S04C01",
+      "n": 9
+    },
+    {
+      "id": "20200623_S_R001S04C01_u00682",
+      "recording_id": "20200623_S_R001S04C01",
+      "n": 17
+    },
+    {
+      "id": "20200623_S_R001S04C01_u00728",
+      "recording_id": "20200623_S_R001S04C01",
+      "n": 4
+    },
+    {
+      "id": "20200623_S_R001S04C01_u00748",
+      "recording_id": "20200623_S_R001S04C01",
+      "n": 10
+    },
+    {
+      "id": "20200623_S_R001S07C01_u00702",
+      "recording_id": "20200623_S_R001S07C01",
+      "n": 13
+    },
+    {
+      "id": "20200623_S_R001S07C01_u01266",
+      "recording_id": "20200623_S_R001S07C01",
+      "n": 5
+    },
+    {
+      "id": "20200623_S_R001S07C01_u01027",
+      "recording_id": "20200623_S_R001S07C01",
+      "n": 9
+    },
+    {
+      "id": "20200623_S_R001S07C01_u01554",
+      "recording_id": "20200623_S_R001S07C01",
+      "n": 17
+    },
+    {
+      "id": "20200623_S_R001S08C01_u00065",
+      "recording_id": "20200623_S_R001S08C01",
+      "n": 22
+    },
+    {
+      "id": "20200623_S_R001S08C01_u00561",
+      "recording_id": "20200623_S_R001S08C01",
+      "n": 21
+    },
+    {
+      "id": "20200623_S_R001S08C01_u00293",
+      "recording_id": "20200623_S_R001S08C01",
+      "n": 19
+    },
+    {
+      "id": "20200623_S_R001S08C01_u00315",
+      "recording_id": "20200623_S_R001S08C01",
+      "n": 11
+    },
+    {
+      "id": "20200624_S_R001S01C01_u00974",
+      "recording_id": "20200624_S_R001S01C01",
+      "n": 14
+    },
+    {
+      "id": "20200624_S_R001S01C01_u01321",
+      "recording_id": "20200624_S_R001S01C01",
+      "n": 14
+    },
+    {
+      "id": "20200624_S_R001S01C01_u00551",
+      "recording_id": "20200624_S_R001S01C01",
+      "n": 24
+    },
+    {
+      "id": "20200624_S_R001S01C01_u01468",
+      "recording_id": "20200624_S_R001S01C01",
+      "n": 7
+    },
+    {
+      "id": "20200624_S_R001S05C01_u01088",
+      "recording_id": "20200624_S_R001S05C01",
+      "n": 29
+    },
+    {
+      "id": "20200624_S_R001S05C01_u00620",
+      "recording_id": "20200624_S_R001S05C01",
+      "n": 10
+    },
+    {
+      "id": "20200624_S_R001S05C01_u00682",
+      "recording_id": "20200624_S_R001S05C01",
+      "n": 18
+    },
+    {
+      "id": "20200624_S_R001S05C01_u00790",
+      "recording_id": "20200624_S_R001S05C01",
+      "n": 9
+    },
+    {
+      "id": "20200624_S_R001S06C01_u00827",
+      "recording_id": "20200624_S_R001S06C01",
+      "n": 57
+    },
+    {
+      "id": "20200624_S_R001S06C01_u00490",
+      "recording_id": "20200624_S_R001S06C01",
+      "n": 32
+    },
+    {
+      "id": "20200624_S_R001S06C01_u00259",
+      "recording_id": "20200624_S_R001S06C01",
+      "n": 9
+    },
+    {
+      "id": "20200624_S_R001S06C01_u00961",
+      "recording_id": "20200624_S_R001S06C01",
+      "n": 18
+    },
+    {
+      "id": "20200624_S_R001S07C01_u00003",
+      "recording_id": "20200624_S_R001S07C01",
+      "n": 8
+    },
+    {
+      "id": "20200624_S_R001S07C01_u00790",
+      "recording_id": "20200624_S_R001S07C01",
+      "n": 12
+    },
+    {
+      "id": "20200624_S_R001S07C01_u00621",
+      "recording_id": "20200624_S_R001S07C01",
+      "n": 8
+    },
+    {
+      "id": "20200624_S_R001S07C01_u00673",
+      "recording_id": "20200624_S_R001S07C01",
+      "n": 20
+    },
+    {
+      "id": "20200624_S_R001S08C01_u00352",
+      "recording_id": "20200624_S_R001S08C01",
+      "n": 14
+    },
+    {
+      "id": "20200624_S_R001S08C01_u00083",
+      "recording_id": "20200624_S_R001S08C01",
+      "n": 14
+    },
+    {
+      "id": "20200624_S_R001S08C01_u00600",
+      "recording_id": "20200624_S_R001S08C01",
+      "n": 20
+    },
+    {
+      "id": "20200624_S_R001S08C01_u00670",
+      "recording_id": "20200624_S_R001S08C01",
+      "n": 27
+    },
+    {
+      "id": "20200630_S_R001S02C01_u00206",
+      "recording_id": "20200630_S_R001S02C01",
+      "n": 11
+    },
+    {
+      "id": "20200630_S_R001S02C01_u00617",
+      "recording_id": "20200630_S_R001S02C01",
+      "n": 10
+    },
+    {
+      "id": "20200630_S_R001S02C01_u00115",
+      "recording_id": "20200630_S_R001S02C01",
+      "n": 26
+    },
+    {
+      "id": "20200630_S_R001S02C01_u00592",
+      "recording_id": "20200630_S_R001S02C01",
+      "n": 21
+    },
+    {
+      "id": "20200630_S_R001S06C01_u00859",
+      "recording_id": "20200630_S_R001S06C01",
+      "n": 16
+    },
+    {
+      "id": "20200630_S_R001S06C01_u00865",
+      "recording_id": "20200630_S_R001S06C01",
+      "n": 30
+    },
+    {
+      "id": "20200630_S_R001S06C01_u00570",
+      "recording_id": "20200630_S_R001S06C01",
+      "n": 26
+    },
+    {
+      "id": "20200630_S_R001S06C01_u00614",
+      "recording_id": "20200630_S_R001S06C01",
+      "n": 14
+    },
+    {
+      "id": "20200630_S_R001S07C01_u01246",
+      "recording_id": "20200630_S_R001S07C01",
+      "n": 6
+    },
+    {
+      "id": "20200630_S_R001S07C01_u00312",
+      "recording_id": "20200630_S_R001S07C01",
+      "n": 19
+    },
+    {
+      "id": "20200630_S_R001S07C01_u00979",
+      "recording_id": "20200630_S_R001S07C01",
+      "n": 13
+    },
+    {
+      "id": "20200630_S_R001S07C01_u00117",
+      "recording_id": "20200630_S_R001S07C01",
+      "n": 27
+    },
+    {
+      "id": "20200630_S_R001S08C01_u00911",
+      "recording_id": "20200630_S_R001S08C01",
+      "n": 9
+    },
+    {
+      "id": "20200630_S_R001S08C01_u00017",
+      "recording_id": "20200630_S_R001S08C01",
+      "n": 21
+    },
+    {
+      "id": "20200630_S_R001S08C01_u00023",
+      "recording_id": "20200630_S_R001S08C01",
+      "n": 31
+    },
+    {
+      "id": "20200630_S_R001S08C01_u00704",
+      "recording_id": "20200630_S_R001S08C01",
+      "n": 8
+    },
+    {
+      "id": "20200701_S_R001S01C01_u00093",
+      "recording_id": "20200701_S_R001S01C01",
+      "n": 17
+    },
+    {
+      "id": "20200701_S_R001S01C01_u00623",
+      "recording_id": "20200701_S_R001S01C01",
+      "n": 35
+    },
+    {
+      "id": "20200701_S_R001S01C01_u00239",
+      "recording_id": "20200701_S_R001S01C01",
+      "n": 20
+    },
+    {
+      "id": "20200701_S_R001S01C01_u00317",
+      "recording_id": "20200701_S_R001S01C01",
+      "n": 2
+    },
+    {
+      "id": "20200701_S_R001S04C01_u00266",
+      "recording_id": "20200701_S_R001S04C01",
+      "n": 43
+    },
+    {
+      "id": "20200701_S_R001S04C01_u00437",
+      "recording_id": "20200701_S_R001S04C01",
+      "n": 51
+    },
+    {
+      "id": "20200701_S_R001S04C01_u00459",
+      "recording_id": "20200701_S_R001S04C01",
+      "n": 41
+    },
+    {
+      "id": "20200701_S_R001S04C01_u00570",
+      "recording_id": "20200701_S_R001S04C01",
+      "n": 29
+    },
+    {
+      "id": "20200701_S_R001S05C01_u00597",
+      "recording_id": "20200701_S_R001S05C01",
+      "n": 40
+    },
+    {
+      "id": "20200701_S_R001S05C01_u00637",
+      "recording_id": "20200701_S_R001S05C01",
+      "n": 46
+    },
+    {
+      "id": "20200701_S_R001S05C01_u00163",
+      "recording_id": "20200701_S_R001S05C01",
+      "n": 25
+    },
+    {
+      "id": "20200701_S_R001S05C01_u00165",
+      "recording_id": "20200701_S_R001S05C01",
+      "n": 25
+    },
+    {
+      "id": "20200701_S_R001S06C01_u00744",
+      "recording_id": "20200701_S_R001S06C01",
+      "n": 25
+    },
+    {
+      "id": "20200701_S_R001S06C01_u00756",
+      "recording_id": "20200701_S_R001S06C01",
+      "n": 22
+    },
+    {
+      "id": "20200701_S_R001S06C01_u00563",
+      "recording_id": "20200701_S_R001S06C01",
+      "n": 38
+    },
+    {
+      "id": "20200701_S_R001S06C01_u00187",
+      "recording_id": "20200701_S_R001S06C01",
+      "n": 4
+    },
+    {
+      "id": "20200702_S_R001S01C01_u00790",
+      "recording_id": "20200702_S_R001S01C01",
+      "n": 24
+    },
+    {
+      "id": "20200702_S_R001S01C01_u00101",
+      "recording_id": "20200702_S_R001S01C01",
+      "n": 12
+    },
+    {
+      "id": "20200702_S_R001S01C01_u00583",
+      "recording_id": "20200702_S_R001S01C01",
+      "n": 19
+    },
+    {
+      "id": "20200702_S_R001S01C01_u00880",
+      "recording_id": "20200702_S_R001S01C01",
+      "n": 8
+    },
+    {
+      "id": "20200702_S_R001S04C01_u00828",
+      "recording_id": "20200702_S_R001S04C01",
+      "n": 17
+    },
+    {
+      "id": "20200702_S_R001S04C01_u00836",
+      "recording_id": "20200702_S_R001S04C01",
+      "n": 18
+    },
+    {
+      "id": "20200702_S_R001S04C01_u00179",
+      "recording_id": "20200702_S_R001S04C01",
+      "n": 10
+    },
+    {
+      "id": "20200702_S_R001S04C01_u00898",
+      "recording_id": "20200702_S_R001S04C01",
+      "n": 25
+    },
+    {
+      "id": "20200702_S_R001S05C01_u00755",
+      "recording_id": "20200702_S_R001S05C01",
+      "n": 15
+    },
+    {
+      "id": "20200702_S_R001S05C01_u01050",
+      "recording_id": "20200702_S_R001S05C01",
+      "n": 40
+    },
+    {
+      "id": "20200702_S_R001S05C01_u00215",
+      "recording_id": "20200702_S_R001S05C01",
+      "n": 26
+    },
+    {
+      "id": "20200702_S_R001S05C01_u00789",
+      "recording_id": "20200702_S_R001S05C01",
+      "n": 40
+    },
+    {
+      "id": "20200702_S_R001S08C01_u00003",
+      "recording_id": "20200702_S_R001S08C01",
+      "n": 20
+    },
+    {
+      "id": "20200702_S_R001S08C01_u00553",
+      "recording_id": "20200702_S_R001S08C01",
+      "n": 21
+    },
+    {
+      "id": "20200702_S_R001S08C01_u00171",
+      "recording_id": "20200702_S_R001S08C01",
+      "n": 16
+    },
+    {
+      "id": "20200702_S_R001S08C01_u00249",
+      "recording_id": "20200702_S_R001S08C01",
+      "n": 14
+    },
+    {
+      "id": "20200805_S_R001S01C01_u00390",
+      "recording_id": "20200805_S_R001S01C01",
+      "n": 47
+    },
+    {
+      "id": "20200805_S_R001S01C01_u00094",
+      "recording_id": "20200805_S_R001S01C01",
+      "n": 21
+    },
+    {
+      "id": "20200805_S_R001S01C01_u00166",
+      "recording_id": "20200805_S_R001S01C01",
+      "n": 27
+    },
+    {
+      "id": "20200805_S_R001S01C01_u00703",
+      "recording_id": "20200805_S_R001S01C01",
+      "n": 40
+    },
+    {
+      "id": "20200805_S_R001S06C01_u00536",
+      "recording_id": "20200805_S_R001S06C01",
+      "n": 49
+    },
+    {
+      "id": "20200805_S_R001S06C01_u00104",
+      "recording_id": "20200805_S_R001S06C01",
+      "n": 16
+    },
+    {
+      "id": "20200805_S_R001S06C01_u00278",
+      "recording_id": "20200805_S_R001S06C01",
+      "n": 13
+    },
+    {
+      "id": "20200805_S_R001S06C01_u00075",
+      "recording_id": "20200805_S_R001S06C01",
+      "n": 24
+    },
+    {
+      "id": "20200806_S_R001S05C01_u00126",
+      "recording_id": "20200806_S_R001S05C01",
+      "n": 12
+    },
+    {
+      "id": "20200806_S_R001S05C01_u01010",
+      "recording_id": "20200806_S_R001S05C01",
+      "n": 9
+    },
+    {
+      "id": "20200806_S_R001S05C01_u00450",
+      "recording_id": "20200806_S_R001S05C01",
+      "n": 11
+    },
+    {
+      "id": "20200806_S_R001S05C01_u01387",
+      "recording_id": "20200806_S_R001S05C01",
+      "n": 8
+    },
+    {
+      "id": "20200806_S_R001S07C01_u00005",
+      "recording_id": "20200806_S_R001S07C01",
+      "n": 9
+    },
+    {
+      "id": "20200806_S_R001S07C01_u00007",
+      "recording_id": "20200806_S_R001S07C01",
+      "n": 14
+    },
+    {
+      "id": "20200806_S_R001S07C01_u00396",
+      "recording_id": "20200806_S_R001S07C01",
+      "n": 24
+    },
+    {
+      "id": "20200806_S_R001S07C01_u01142",
+      "recording_id": "20200806_S_R001S07C01",
+      "n": 14
+    },
+    {
+      "id": "20200807_S_R001S02C01_u00501",
+      "recording_id": "20200807_S_R001S02C01",
+      "n": 27
+    },
+    {
+      "id": "20200807_S_R001S02C01_u00515",
+      "recording_id": "20200807_S_R001S02C01",
+      "n": 43
+    },
+    {
+      "id": "20200807_S_R001S02C01_u00366",
+      "recording_id": "20200807_S_R001S02C01",
+      "n": 35
+    },
+    {
+      "id": "20200807_S_R001S02C01_u00019",
+      "recording_id": "20200807_S_R001S02C01",
+      "n": 28
+    },
+    {
+      "id": "20200807_S_R001S06C01_u00624",
+      "recording_id": "20200807_S_R001S06C01",
+      "n": 15
+    },
+    {
+      "id": "20200807_S_R001S06C01_u00423",
+      "recording_id": "20200807_S_R001S06C01",
+      "n": 57
+    },
+    {
+      "id": "20200807_S_R001S06C01_u00698",
+      "recording_id": "20200807_S_R001S06C01",
+      "n": 15
+    },
+    {
+      "id": "20200807_S_R001S06C01_u00907",
+      "recording_id": "20200807_S_R001S06C01",
+      "n": 23
+    },
+    {
+      "id": "20200807_S_R001S08C01_u00005",
+      "recording_id": "20200807_S_R001S08C01",
+      "n": 13
+    },
+    {
+      "id": "20200807_S_R001S08C01_u00028",
+      "recording_id": "20200807_S_R001S08C01",
+      "n": 13
+    },
+    {
+      "id": "20200807_S_R001S08C01_u00247",
+      "recording_id": "20200807_S_R001S08C01",
+      "n": 18
+    },
+    {
+      "id": "20200807_S_R001S08C01_u00303",
+      "recording_id": "20200807_S_R001S08C01",
+      "n": 16
+    },
+    {
+      "id": "20200808_S_R001S02C01_u00015",
+      "recording_id": "20200808_S_R001S02C01",
+      "n": 24
+    },
+    {
+      "id": "20200808_S_R001S02C01_u00732",
+      "recording_id": "20200808_S_R001S02C01",
+      "n": 27
+    },
+    {
+      "id": "20200808_S_R001S02C01_u01047",
+      "recording_id": "20200808_S_R001S02C01",
+      "n": 29
+    },
+    {
+      "id": "20200808_S_R001S02C01_u01225",
+      "recording_id": "20200808_S_R001S02C01",
+      "n": 34
+    }
+  ],
+  "diagnostic_actual_quality": "cost subset only; fixed repeat means, never extra primary quality N"
+}
