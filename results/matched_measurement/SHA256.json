@@ -1,0 +1,26 @@
+{
+  "arms.csv": {
+    "sha256": "26641eb6d850b251aac1f590c260d686fd6ff0e61a1129d95a7d16a0c454ad64",
+    "bytes": 2160
+  },
+  "effects.csv": {
+    "sha256": "a8fe9166b8c4810290888ca33fd9995842e9207e1427ff85d62bc72a1d7241c1",
+    "bytes": 8694
+  },
+  "components.csv": {
+    "sha256": "f6b92cf92114c2b44bc63ea0508fad5b98998c50360a8fc6585dcfa4d9023497",
+    "bytes": 56607
+  },
+  "mode_associated.csv": {
+    "sha256": "29eedfa74584703f6607a2397b05e6b5a574737ba4ca3fbcf545e3f689dc7186",
+    "bytes": 3063
+  },
+  "rounds.csv": {
+    "sha256": "c0fdddab986a5167d9217e0da3d8b5aaf22f996e77e76a16ef1369c5fc0618a1",
+    "bytes": 2097
+  },
+  "leave_one_date.csv": {
+    "sha256": "1204a521d464b2573a46fe0f14d6adaef6c6444f13fc53c93de6c20aab3dcebf",
+    "bytes": 7972
+  }
+}

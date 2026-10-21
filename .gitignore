@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.rknn
+*.rkllm
+*.safetensors
+*.wav
+*.flac
+*.log
+private/
+raw_execution/
